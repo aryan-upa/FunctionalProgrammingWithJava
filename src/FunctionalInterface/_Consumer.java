@@ -10,6 +10,9 @@ public class _Consumer {
         // Using Consumer
         greetCustomerConsumer.accept(new Customer("Maria", "123456879"));
 
+        // Using BiConsumer
+        greetCustomerWithOrWithoutPhoneNumber.accept(new Customer("Maria", "123456879"), false);
+
     }
 
     // This is the primitive method of a function taking an object as argument and using
@@ -36,5 +39,11 @@ public class _Consumer {
         System.out.println("Hello " + customer.cusName
         + ", thanks for sharing your Ph. No. with us " + customer.cusPhoneNum + "\n");
     };
-    
+
+    static BiConsumer<Customer, Boolean> greetCustomerWithOrWithoutPhoneNumber = ((customer, showPhNumber) -> {
+        System.out.println("Hello " + customer.cusName +
+                ", thanks for registering with your Ph. number " +
+                (showPhNumber ? customer.cusPhoneNum : "*********"));
+    });
+
 }
