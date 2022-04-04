@@ -25,6 +25,11 @@ public class Main {
               System.out.println(female);
         }
 
+        // Declarative Approach
+        people.stream()
+                .filter(person -> person.gender.equals(Gender.FEMALE))
+                .forEach(System.out::println);
+
     }
 
     record Person(String name, Gender gender) {
@@ -45,4 +50,8 @@ public class Main {
 /*
 Comments : Imperative approach is lengthy even when we need to do something so simple
     Also we have to use a lot of code and define various things which costs us time.
+
+    The Declarative approach is much neater and a lo of work can be done with only
+    writing a few lines of code.
+
  */
