@@ -21,9 +21,9 @@ Functional programming works on four concepts in Java 8:
 
 ## Resources Used:
 | Resource                       | URL                                                 |
-| ------------------------------ | --------------------------------------------------- |
+|--------------------------------|-----------------------------------------------------|
 | Functional Programming in Java | [Link](https://youtu.be/VRpHdSFWGPs)                |
-| Optional Classes Crash Course  | [link](https://www.youtube.com/watch?v=1xCxoOuDZuU) |
+| Optional Classes Crash Course  | [Link](https://www.youtube.com/watch?v=1xCxoOuDZuU) |
 | Java Streams Tutorial          | [Link](https://www.youtube.com/watch?v=Q93JsQ8vcwY) |
 
-### Tutor: [Amigoscode](https://www.youtube.com/c/amigoscode)
+### Tutor: [AmigosCode](https://www.youtube.com/c/amigoscode)
