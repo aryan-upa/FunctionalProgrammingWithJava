@@ -20,13 +20,13 @@ public interface CustomerRegistrationValidator extends Function<Customer, Valida
 
     static CustomerRegistrationValidator isAnAdult () {
         return customer -> Period.between(customer.getDob(), LocalDate.now()).getYears() >= 18
-                ? SUCCESS : ValidationResult.IS_NOT_AN_ADULT ;
+                ? SUCCESS : IS_NOT_AN_ADULT ;
     }
 
     default CustomerRegistrationValidator and (CustomerRegistrationValidator other) {
         return customer -> {
             ValidationResult result = this.apply(customer);
-            return result.equals(ValidationResult.SUCCESS) ? other.apply(customer) : result;
+            return result.equals(SUCCESS) ? other.apply(customer) : result;
         };
     }
 
